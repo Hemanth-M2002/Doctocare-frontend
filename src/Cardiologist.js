@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 export default function Cardiologist() {
   const [docs, setDocs] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/cardio").then((resp) => {
+    axios.get("https://doctocare-backend.onrender.com/cardio").then((resp) => {
       setDocs(resp.data.data);
     });
   }, []);

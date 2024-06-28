@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 export default function Dental() {
   const [docs, setDocs] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/userapi").then((resp) => {
+    axios.get("https://doctocare-backend.onrender.com/userapi").then((resp) => {
       setDocs(resp.data.data);
     });
   }, []);

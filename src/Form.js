@@ -17,7 +17,7 @@ const Form = () => {
 
   function apiCall(docid, name, email, bloodgroup, gender, phonenumber, address, date, time) {
     axios
-      .post('http://localhost:5000/send-email', {
+      .post('https://doctocare-backend.onrender.com/send-email', {
         id: docid,
         Name: name,
         Email: email,
