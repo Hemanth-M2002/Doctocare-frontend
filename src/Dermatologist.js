@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 export default function Dermatologist() {
     const [docs, setDocs] = useState([]);
     useEffect(() => {
-      axios.get("http://localhost:3001/dermatologist").then((resp) => {
+      axios.get("http://localhost:5000/dermatologist").then((resp) => {
         setDocs(resp.data.data);
       });
     }, []);
